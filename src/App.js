@@ -19,14 +19,14 @@ function App() {
       <Header
         user={user}
         onProfileClick={() => setScreen("profile")}
-        />
-
-      {screen === "dashboard" && (
-        <CommentsDashboard onViewProfile={() => setScreen("profile")} />
-      )}
+      />
       {screen === "profile" && (
         <ProfileScreen onBack={() => setScreen("dashboard")} />
       )}
+      {screen === "dashboard" && (
+        <CommentsDashboard onViewProfile={() => setScreen("profile")} />
+      )}
+      
     </div>
   );
 }
