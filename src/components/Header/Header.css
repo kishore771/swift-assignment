@@ -1,0 +1,49 @@
+.custom-header {
+  background-color: #232548; /* dark navy */
+  padding: 8px 44px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 66px;
+  padding-left: 20px;
+}
+
+.logo-text {
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-initials {
+  background-color: white;
+  color: #232548;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-user-name {
+  color: white;
+  font-size: 16px;
+  padding-right: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}

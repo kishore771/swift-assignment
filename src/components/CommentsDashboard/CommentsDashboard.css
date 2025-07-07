@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* ✅ prevents horizontal scroll */
+}
+
+
+.dashboard-container {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+/* ===================== Top Controls ===================== */
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  gap: 16px;
+  
+}
+
+.sort-btn {
+  background-color: #e6e5e5;
+  border: 1px solid #afadad;
+  font-size: 14px;
+  padding: 6px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: auto;
+}
+
+.sort-btn:hover {
+  background-color: #d8d8d8;
+}
+
+.search-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 300px;
+  margin-left: auto;
+  padding-right: 150px;
+}
+
+.dashboard-search {
+  width: 80%;
+  padding: 8px 90px 8px 50px;
+  height: 36px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #d7d9dc;
+  background-color: #fff;
+  background-image: url("https://i.postimg.cc/dQfmMwFJ/search.png");
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 16px;
+}
+
+/* ===================== Table Styles ===================== */
+.dashboard-table-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  margin: 40px ;
+}
+
+.dashboard-table {
+  width: 100%;
+  margin-bottom: 0;
+  border-collapse: collapse;
+}
+
+.dashboard-table thead {
+  background-color: #f1f1f1;
+}
+
+.dashboard-table th {
+  font-weight: 600;
+  font-size: 14px;
+  padding: 14px;
+  color: #333;
+}
+
+.dashboard-table td {
+  font-size: 14px;
+  padding: 14px;
+  color: #333;
+  vertical-align: middle;
+  background-color: #fff;
+  border-top: 1px solid #e9ecef;
+}
+
+/* ===================== Pagination Styles ===================== */
+.pagination-bar {
+  display: flex;
+  justify-content: end;
+  font-size: 14px;
+  margin-top: 24px;
+  padding: 0 10px;
+  margin-right: 20px;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.page-info {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  color: #6c757d;
+  font-size: 14px;
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+.pagination-arrow,
+.pagination-page {
+  border: 1px solid #ccc;
+  background: #fff;
+  font-size: 14px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination-page.active {
+  border: 2px solid #333;
+  font-weight: 600;
+}
+
+.pagination-arrow:disabled,
+.pagination-page:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-select {
+  font-size: 14px;
+  height: 32px;
+  padding: 4px 10px;
+  width: auto;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.ellipsis {
+  font-size: 16px;
+  color: #999;
+  padding: 0 6px;
+  user-select: none;
+}
